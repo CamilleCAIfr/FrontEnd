@@ -1,0 +1,70 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>label标签</title>
+</head>
+<!-- 
+    添加label标签，获取焦点
+        当我们点击label里面的文字时，后面的input输入框会被选中
+        实施了文字和表单控件的关联
+        还可以获取远距离的焦点
+
+    for 和 id 属性相对应
+    label和input之间有回车所以有空隙
+        要么下面都加回车保持一致，要么让他们在同一行
+        按钮不需要做关联
+ -->
+<body>
+    <form action="https://search.jd.com/search">
+        <!-- 第一种方式，写for和id关联 -->
+        <label for="zhanghu">账户：</label>
+        <input id="zhanghu" type="text" name="account" maxlength="10"><br>
+        <!-- 第二种方式，直接把文本带input放在label标签里 -->
+        <label>
+            密码：
+            <input id="mima" type="password" name="pwd" maxlength="6"><br>
+        </label>
+        <!-- 点击汉字，也可以选中 
+                使input和label关联
+                    依旧是两种方式
+        -->
+        性别：
+        <input id="nan" type="radio" name="gender" value="male">
+        <label for="nan">男</label>
+        <label>
+            <input type="radio" name="gender" value="female">女 <br>
+        </label>
+        爱好：
+        <label>
+            <input type="checkbox" name="hobby" value="smoke">抽烟
+        </label>
+        <input id="hejiu" type="checkbox" name="hobby" value="drink">
+        <label for="hejiu">喝酒</label>
+        <label>
+            <input type="checkbox" name="hobby" value="perm">烫头
+        </label>
+        <br>
+        <label for="qita">其他：</label>
+        <textarea id="qita" name="other" cols="23" rows="3"></textarea>
+        <br>
+        <!-- 下拉框只会获取下拉框的焦点，不会打开选项 -->
+        籍贯：
+        <select name="place">
+            <option value="冀">河北</option>
+            <option value="鲁">山东</option>
+            <option value="晋">山西</option>
+            <option value="粤">广东</option>
+        </select>
+        <br>
+        <input type="hidden" name="from" value="jingdong">
+        <br>
+        <button>确认</button>
+        <input type="submit" value="点我确认">
+        <input type="reset" value="点我重置">
+        <button type="button">检测账户是否被注册</button>
+    </form>
+
+</body>
+</html>

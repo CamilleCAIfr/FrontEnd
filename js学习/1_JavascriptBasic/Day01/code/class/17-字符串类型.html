@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 单引号和双引号本质上没有区别，推荐使用单引号
+    //变量不能加引号
+    let str = 'pink' // 单引号
+    let str1 = "pink" // 双引号
+    let str2 = `中文` // 反引号
+    let tel = '17776972337' // 引号包裹了数字就是字符串
+    let str3 = '' // 空字符串
+    console.log(str2)
+    console.log(11)
+    console.log(`11`)
+    console.log(str)
+    console.log('str')
+    console.log('今天天气很"好"')
+    console.log("今天天气很'不好'")
+    console.log('今天天气很\'一般\'') // 添加转义符， 编译器看到转义符，直接打印后面的符号
+    console.log('---字符串拼接---')
+
+    // 字符串拼接  + 表示数字相加， 字符相连
+    console.log(1 + 1)
+    console.log('pink' + '老师')
+
+    document.write('I am' + 'Ruoqi')
+    let company = 'GAMBA'
+    let uname = 'Ruoqi'
+    document.write(company + uname)
+
+    let age = 18
+    document.write('I am' + age + 'years old')
+
+    let age1 = 25
+    document.write('He is' + age1 + 'years old')
+  </script>
+</body>
+
+</html>

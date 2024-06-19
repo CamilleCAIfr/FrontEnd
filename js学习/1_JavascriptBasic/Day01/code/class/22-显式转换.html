@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 自己写代码告诉系统该转成什么类型
+    // Number
+    let str = '123'
+    console.log(Number(str))
+    console.log(Number('pink'))
+
+    // let num = prompt('input salary')
+    // console.log(Number(num))
+
+    // NaN也是number类型的数据,代表非数字
+
+    // parseInt 没有四舍五入
+    console.log(parseInt('12px'))
+    console.log(parseInt('12.34px'))
+    console.log(parseInt('12.94px'))
+    console.log(parseInt('abc12.94px'))
+    // parseFloat
+    console.log(parseFloat('12.34px'))
+    console.log(parseFloat('12.94px'))
+    console.log(parseFloat('abc12.94px'))
+
+    // 第一种方法
+    // let num1 = prompt('Please input the first number')
+    // let num2 = prompt('Please input the second number')
+    // let sum = Number(num1) + Number(num2)
+    // alert(`The sum is: ${sum}`)
+
+    // 第二种方法
+    let num1 = +prompt('Please input the first number')
+    let num2 = +prompt('Please input the second number')
+    alert(`The sum is: ${num1 + num2}`)
+  </script>
+</body>
+
+</html>

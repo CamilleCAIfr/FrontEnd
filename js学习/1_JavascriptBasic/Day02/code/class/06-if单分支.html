@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 语句是一段可以执行的代码
+    //       表达式可以被求值,语句不一定有值
+    //       alert,for,brea就不能被赋值，但prompt可以被赋值
+
+    //       三大结构
+    //         顺序结构
+    //         分支结构  根据条件选择执行代码
+    //         循环结构  某段代码被重复执行
+
+    //         分支语句
+    //           if分支语句
+    //             单分支
+    //               if (条件) {
+    //               }
+    //             双分支
+    //             多分支
+
+    //           三元运算符
+    //           switch语句
+
+
+    // 单分支语句
+    if (true) {
+      console.log('执行语句') // true
+    }
+
+    if (3 > 5) {
+      console.log('执行语句')
+    }
+
+    if (2 > '2') {
+      console.log('执行语句')
+    }
+    // 除了0，所有的数字都为真
+    if (2) {
+      console.log('执行语句')// true
+    }
+    // 除了''，所有字符串都为真
+    if ('pink') {
+      console.log('执行语句')// true
+    }
+    console.log('-------------')
+
+
+    // input grade
+    let grade = prompt('Please input your gaokao grade')
+    // if  output 
+    if (grade > 700) {
+      alert('Congratulation! Wellcome to Heima engineer school')
+    }
+  </script>
+</body>
+
+</html>

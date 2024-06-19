@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    console.log(3 > 5)
+    console.log(3 >= 3)
+    console.log(2 == 2)
+
+    //比较运算符也有隐式转换 把'2'转换为  双等号只判断值  
+    console.log(2 == '2')
+
+
+    //全等号判断值和数据类型是否都一样 
+
+    console.log(2 === '2')
+
+    //以后判断是否相等 强烈建议用 ===   ！！！！！
+    console.log(undefined == null)
+    console.log(undefined === null)
+
+    // NaN不等于任何人  包括它自己
+    console.log(NaN == NaN)
+
+    // !=  是不等的意思  只考虑值
+    console.log('2' != 2)
+    // !==  是不全等的意思  值和数据类型都考虑
+    console.log('2' !== 2)
+
+    // 字符串的比较是 ASCII 码值
+    console.log('---------------------')
+    console.log('a' < 'b'); // true
+    console.log('aa' < 'ab'); // true
+    console.log('aa' < 'aac'); // true  先比第一个字母 再比第二个字母
+    console.log('---------------------')
+
+    // 涉及到 NaN 的 都是  false
+
+    // 小数参与运算一般转换成整数
+
+  </script>
+</body>
+
+</html>

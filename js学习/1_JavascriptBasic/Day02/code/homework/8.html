@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 用户登录验证
+
+题目描述：
+
+接收用户输入的用户名和密码，若用户名为 “admin” ,且密码为 “123456” ,则提示用户登录成功! 否则，让用户一直输入。 -->
+  <script>
+    // set user name and password
+
+    // if correct, alert sucess; otherwise input again
+
+    let uname = 'admin'
+    let upsw = '123456'
+    // receive the inputs
+
+    while (true) {
+      let name = prompt('Please input user name')
+      let psw = prompt('Please input user password')
+      if (uname === name && upsw === psw) {
+        alert('log in successfully')
+        break
+      }
+
+    } 
+  </script>
+</body>
+
+</html>

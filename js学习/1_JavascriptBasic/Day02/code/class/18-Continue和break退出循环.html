@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 推出循环
+    // let i = 1
+    // while (i <= 5) {
+    //   if (i === 3) {
+    //     break
+    //   }
+    //   document.write(`I'm going to eat the ${i}th baozi ! <br>`)
+    //   i++
+    // }
+
+    // 结束本次循环 继续下次循环
+    let i = 1
+    while (i <= 5) {
+      if (i === 3) {
+        i++
+        continue
+      }
+      document.write(`I'm going to eat the ${i}th baozi ! <br>`)
+      i++
+    }
+  </script>
+</body>
+
+</html>

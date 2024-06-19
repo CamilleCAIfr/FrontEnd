@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 请问以下代码会出现什么问题，如何解决？ -->
+  <script>
+    // 需求： 用户输入1~4之间整数，对应输出 '春' '夏' '秋' '冬' 
+    // 例如用户输入 1 则输出 '春' ，用户输入 2，则输出 '夏' 以此类推
+    // 注意： 此处有2个错误，找出并且修正
+    let num = +prompt('请你输入一个1-4之间的值')
+    switch (num) {
+      case '1':
+        alert('春')
+      // break
+      case '2':
+        alert('夏')
+      // break
+      case '3':
+        alert('秋')
+      // break
+      case '4':
+        alert('冬')
+      // break
+      default:
+        alert('请输入1~4之间整数')
+        break
+    }
+
+    // 每一个case都没有加break
+    // 删除prompt前面的 + 号
+  </script>
+</body>
+
+</html>

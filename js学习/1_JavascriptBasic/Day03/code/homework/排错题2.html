@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 请问以下代码会出现什么问题，如何解决？ -->
+  <script>
+    let sum = 0
+    let arr = [1, 2, 3, 4, 5]
+    for (let i = 1; i < arr.length; i++) {  //  错误： i 从 0 开始 
+      console.log(arr[i])
+    }
+    //打印数字1
+    console.log(arr[0]);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新增状态标签</title>
+    <style>
+        progress{
+            width: 50px;
+        }
+    </style>
+    <!-- 
+        meter 定义已知范围内的标量测量
+            max
+            min
+            value
+            low
+            high
+            optimum 规定最优值
+
+        progress 显示某个任务完成的进度的指示器
+     -->
+</head>
+<body>
+    <span>手机电量：</span>
+    <meter max="100" min="0" value="3" low="10" high="20" optimum="90"></meter>
+    <br>
+    <span>当前进度：</span>
+    <progress max="100" value="80"></progress>
+</body>
+</html>

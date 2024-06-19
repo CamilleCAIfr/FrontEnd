@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H5新增布局标签</title>
+</head>
+<!-- 
+    有的语义的div
+
+    header 整个页面或部分区域的头部
+    footer 整个页面或部分页面的底部
+    nav 导航
+    article 文章，帖子，杂志，新闻，博客，评论
+    section 页面中的某段文字，或文章中的某段文字（里面通常包含标题）
+    aside 侧边栏
+
+    article和section
+        article里面可以有多个section
+        section强调的是分段或分块
+        article比section更强调独立性
+    拿捏不准用div
+-->
+<body>
+    <header>
+        <h1>尚品汇</h1>
+    </header>
+    <hr>
+    <nav>
+        <a href="">首页</a>
+        <a href="">订单</a>
+        <a href="">购物车</a>
+        <a href="">我的</a>
+    </nav>
+    <aside style="float: right;">
+        <nav>
+            <ul>
+                <li><a href="">秒杀专区</a></li>
+                <li><a href="">会员专区</a></li>
+                <li><a href="">领取优惠券</a></li>
+                <li><a href="">品牌专区</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="page-content">
+        <article>
+            <h2>如何一夜暴富</h2>
+            <section>
+                <h3>第一种方式：通过做梦</h3>
+                <p>你要这么做梦：xxxxxxxxx</p>
+            </section>
+            <section>
+                <h3>二种方式：通过买彩票</h3>
+                <p>你要这么买彩票：xxxxxxxxx</p>
+            </section>
+            <section>
+                <h3>第三种方式：通过学习前端</h3>
+                <p>你要来到尚硅谷学习前端：xxxxxxxxx</p>
+            </section>
+        </article>
+    </div>
+    <hr>
+    <footer>
+        <nav>
+            <a href="">友情链接1</a>
+            <a href="">友情链接2</a>
+            <a href="">友情链接3</a>
+            <a href="">友情链接4</a>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子代选择器</title>
+    <!-- 
+        子代选择器：选中指定元素中，符合要求的子元素（儿子元素）
+            选择器1234可以是任何选择器
+        div.foot>a 交集选择器
+        div .foot>a 父代选择器
+        .foot>a 子代选择器
+
+        注意：
+        子代选择器最终选择是子代，不是父代
+        子就是指儿子
+     -->
+    <style>
+        div>a {
+            color: red;
+        }
+        div>p>a {
+            color: skyblue;
+        }
+        .foot>a {
+            color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="#">张三</a>
+        <a href="#">李四</a>
+        <a href="#">王五</a>
+        <p>
+            <a href="#">赵六</a>
+            <div class="foot">
+                <a href="#">孙七</a>
+            </div>
+        </p>
+    </div>
+</body>
+</html>

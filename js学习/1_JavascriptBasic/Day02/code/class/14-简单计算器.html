@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 输入 2 个数字
+    let num1 = +prompt('Please input the first number')
+    let num2 = +prompt('Please input the second number')
+    // 输入运算符号并计算结果  输出
+    let sym = prompt('Please input the symbol (+ - * /)')
+
+    switch (sym) {
+      case '+':
+        res = num1 + num2
+        alert(`you choose plus, the result is ${num1 + num2}`)
+        break
+      case '-':
+        res = num1 + num2
+        alert(`you choose minus, the result is ${num1 - num2}`)
+        break
+      case '*':
+        res = num1 + num2
+        alert(`you choose mutiple, the result is ${num1 * num2}`)
+        break
+      case '/':
+        res = num1 + num2
+        alert(`you choose divide, the result is ${num1 / num2}`)
+        break
+      default:
+        alert(`error Please input the symbol (+ - * /)`)
+    }
+  </script>
+</body>
+
+</html>

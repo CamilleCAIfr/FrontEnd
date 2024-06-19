@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 打开页面出现一个提示框，注意是一直提示的，'请您选择 + - * / ，如果输入q，则是退出结束程序
+    let sum = 0
+
+    while (true) {
+      let sel = prompt(`
+    1. Please select + - * /
+    2. if you type 'q', you will exit
+    `)
+      if (sel === 'q') {
+        break
+      } else {
+        let num1 = +prompt('Please input the first number')
+        let num2 = +prompt('Please input the second number')
+        if (sel === '+') {
+          alert(`Your plus result is ${num1 + num2}`)
+        } if (sel === '-') {
+          alert(`Your minus result is ${num1 - num2}`)
+        } if (sel === '*') {
+          alert(`Your multiple result is ${num1 * num2}`)
+        } if (sel === '/') {
+          alert(`Your divide result is ${num1 / num2}`)
+        }
+      }
+
+
+    }
+
+
+
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>并集选择器</title>
+    <!-- 并集选择器：选中多个选择器对应的元素
+            并集是或者的意思，要么xxx要么xxx
+
+            注意：
+            一般竖着写
+            任何形式的选择器都可以作为并集选择器的一部分
+            通常用于集体声明，用于缩小体积
+    -->
+    <style>
+        .rich {
+            color: gold;
+        }
+        .beauty {
+            color: red;
+        }
+        .dog {
+            color: blue;
+        }
+        .pig {
+            color: green;
+        }
+        /* 选中id为suxi，类名为rich,beauty,dog,pig的元素 */
+        #suxi,
+        .rich, 
+        .beauty,
+        .dog,
+        .pig {
+            font-size: 40px;
+            background-color: gray;
+            width: 180px;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="rich">土豪张三</h2>
+    <h2 class="beauty">明星李四</h2>
+    <h2>破产王五（不加任何样式）</h2>
+    <hr>
+    <p class="dog">小狗旺财</p>
+    <p class="pig">小猪佩奇</p>
+    <p id="suxi">小羊苏西</p>
+</body>
+</html>

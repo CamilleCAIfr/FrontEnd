@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>列表</title>
+	</head>
+	<!--
+		列表
+			无序列表 unordered list
+				应用：网站中导航，列表变为横向排列
+					 今日头条导航
+					 淘宝网站每一个商品
+					相对用的更多
+				格式:
+					<ul>
+						<li></li> list items 列表项
+						<li></li>
+					</ul>
+				常用属性：
+					type 列表的图标
+						square  实心方块
+						circle  空心圆
+						disc    实心圆 默认
+				
+			有序列表 ordered list
+				应用：头条热榜
+					 百度百科中目录
+				格式:
+					<ol>
+						<li></li>
+						<li></li>
+					</ol>
+				常用属性：
+					type 列表的图标
+						1  数字序号  默认
+						a  小写字母
+						A  大写字母
+						i  小罗马字母
+						I  大写罗马字母
+			自定义列表：defined list
+				应用：网站最底部，关于我们，联系我们等，含有术语标题和术语描述
+				格式：
+					dl
+						dt title 术语名称
+						dd description 术语描述
+
+			注意事项：
+					ol,ul 中的字元素必须是li，可以嵌套其他标签
+					li不要单独使用，外面必须有ol或ul, 默认是ul
+					列表是可以嵌套的 加span标签，再插入列表
+					自定义列表中，一个术语名称可以有多个术语描述
+
+	-->
+	
+	<body>
+		<h2>无序列表</h2>
+		<ul>
+			<li>张三</li>
+			<li>李四</li>
+			<li>王五</li>
+		</ul>
+		<ul type="disc">
+			<li>张三</li>
+			<li>李四</li>
+			<li>王五</li>
+		</ul>
+		<ul type="square">
+			<li>张三</li>
+			<li>李四</li>
+			<li>王五</li>
+		</ul>
+		<ul type="circle">
+			<li>张三</li>
+			<li>李四</li>
+			<li>王五</li>
+		</ul>
+		<h2>无序列表</h2>
+		<ol type="1">
+			<li>张三</li>
+			<li>李四</li>
+			<li>王五</li>
+		</ol>
+		<ol type="a">
+			<li>张三</li>
+			<li>李四</li>
+			<li>王五</li>
+		</ol>
+		<ol type="A">
+			<li>张三</li>
+			<li>李四</li>
+			<li>王五</li>
+		</ol>
+		<ol type="i">
+			<li>张三</li>
+			<li>李四</li>
+			<li>王五</li>
+		</ol>
+		<ol type="I">
+			<li>张三</li>
+			<li>李四</li>
+			<li>王五</li>
+		</ol>
+
+		<h2>要把大象放冰箱总共分几步？</h2>
+		<ol>
+			<li>把冰箱门打开</li>
+			<li>把大象放进去</li>
+			<li>把冰箱门关上</li>
+		</ol>
+
+		<h2>我想去的几个城市</h2>
+		<ul>
+			<li>北京</li>
+			<li>
+				<span>上海</span>
+				<ul>
+					<li>外滩</li>
+					<li>东方明珠</li>
+					<li>迪士尼乐园</li>
+					<li>杜莎夫人蜡像馆</li>
+				</ul>
+			</li>
+			<li>武汉</li>
+		</ul>
+
+		<h2>如何更好的学习</h2>
+		<dl>
+			<dt>做好笔记</dt>
+			<dd>笔记是我们以后复习的抓手</dd>
+			<dd>笔记可以是电子版也可以是纸质版</dd>
+			<dt>多加练习</dt>
+			<dd>只有敲出来的代码才是自己的</dd>
+			<dt>别怕出错</dt>
+			<dd>错很正常，改正后并记住，就是经验</dd>
+		</dl>
+	</body>
+</html>

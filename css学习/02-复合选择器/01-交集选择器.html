@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交集选择器</title>
+    <!-- 
+        交集选择器：选中同时符合多个条件的元素
+
+        元素选择器必须在类选择前
+
+        id一般不写
+        交集不能两个条件都是元素，可以用两个类名
+        后来者居上，遵循css的顺序
+
+        注：元素选择器.类选择器 用的最多
+     -->
+    <style>
+        .rich {
+            color: gold;
+        }
+        .beauty {
+            color: red;
+        }
+        /* P元素且类名为beauty 
+                元素选择器.类选择器
+        */
+        p.beauty {
+            color: green;
+        }
+        /* 类名包含dream和beauty的元素 */
+        .dream.beauty {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="rich">土豪张三</h2>
+    <h2 class="beauty">明星李四</h2>
+    <h2 class="dream beauty">土豪明星王五</h2>
+    <hr>
+    <p class="beauty">小狗旺财</p>
+    <p class="beauty">小猪佩奇</p>
+</body>
+</html>

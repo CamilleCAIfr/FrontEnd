@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <!-- 
+        后代选择器：选中指定元素中符合要求的后代元素
+            空格可以理解为xx中的，就是后代的意思
+        注意：
+        后代选择器最终选择的是后代，不选中祖先
+
+        结构要符合html嵌套格式：
+            p标签里不能有h1-6
+     -->
+    <style>
+        /* ul后代的li */
+        ul li {
+            color: red;
+        }
+        ol li {
+            color: green;
+        }
+        ul li a {
+            color: orange;
+        }
+        ol li a {
+            color: grey;
+        }
+        .subject li.front-end {
+            color: blue;
+        }
+        .subject div.front-end {
+            color: chocolate;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li>抽烟</li>
+        <li>喝酒</li>
+        <li>
+            <a href="#">烫头</a>
+        </li>
+    </ul>
+    <hr>
+    <ol>
+        <li>张三</li>
+        <li>李四</li>
+        <li>
+            <a href="#">王五</a>
+        </li>
+    </ol>
+    <ol class="subject">
+        <li class="front-end">前端</li>
+        <div class="front-end">学科介绍：学好前端，挂帅扬帆！</div>
+        <li>Java</li>
+        <li>大数据</li>
+        <li>UI</li>
+    </ol>
+</body>
+</html>

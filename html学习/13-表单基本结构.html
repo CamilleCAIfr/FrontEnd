@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单基本结构</title>
+</head>
+<!-- 表单：网页中的一个交互区域，用于收集用户提供的数据
+    总结：
+    form 表单
+        属性：
+        action 表单要提交的地址
+        target 跳转的新地址的打开方式 值：_self, _blank
+        method: 请求方式 get/post
+            取决于后端
+            Ajaxm 
+            node.js
+
+        https://www.baidu.com/s
+            s表示search 会显示搜索结果的页面
+            name=wd 百度后端工程师定的
+        form 侧重收集用户数据
+        a 超链接 侧重跳转
+    
+    input 多种形式的表单控件
+        属性：
+            type 可选值：text,password,radio,checkbox,hidden,submit,reset,button
+            name 指定数据名称 后端人员确定
+            value 
+                对于输入框：指定默认输入的值
+                对于单选和复选框：实际提交的数据
+                对于按钮：显示按钮文字
+            disabled 设置表单控件不可用
+            maxlength 用于输入框，设置最大可输入长度
+            checked 用于单选按钮和复选框 默认选择
+    textarea 文本域
+        属性：
+            name 指定数据名称
+            rows 默认显示的行数 影响文本域的高度
+            cols 默认显示的列数 影响文本域的宽度
+            disabled 设置表单控件不可用
+    select 下拉框
+        属性
+            name 指定数据名称
+            disabled 设置整个下拉框不可用
+    option 下拉框的选项
+        属性
+            disabled 下拉选项不可用
+            value 该选项事件提交的数据 不指定会把标签中的内容作为提交数据
+            selected 默认选中
+    button 按钮
+        属性   
+            disabled 按钮不可用
+            type 值 submit 默认,reset,button
+    label 与表单控件做关联
+        属性   
+            for 值与要关联的表单控件的id值相同
+
+    fieldset 表单控件分组
+    legend 分组名称
+-->
+<body>
+    <form action="https://www.baidu.com/s">
+        <input type="text" name="wd">
+        <button>去百度搜索</button>
+    </form>
+    <hr>
+    <form action="https://search.jd.com/search" target="_self" method="get">
+        <input type="text" name="keyword">
+        <button>去京东搜索</button>
+    </form>
+    <a href="https://search.jd.com/search?keyword=手机">京东搜索手机</a>
+
+</body>
+</html>

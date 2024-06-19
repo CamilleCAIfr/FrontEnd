@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 用户输入一个数， 计算 1 到这个数的累加和
+    // 比如 用户输入的是 5， 则计算 1~5 之间的累加和
+    // 比如用户输入的是10， 则计算 1~10 之间的累加和
+
+    // input a number
+    let num = +prompt('Please input a number')
+    let sum = 0
+    let i = 1
+    // calcul the sum
+    while (i <= num) {
+      sum += i
+      i++
+    }
+    document.write(sum)
+  </script>
+</body>
+
+</html>
