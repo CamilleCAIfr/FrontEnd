@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      font-size: 100px;
+      background-color: skyblue;
+      height: 300px;
+    }
+
+    span {
+      background-color: orange;
+      font-size: 40px;
+      vertical-align: bottom;
+    }
+
+    .san {
+      vertical-align: bottom;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 不能控制块元素 
+   用于指定同一行元素之间或表格单元格内文字的垂直对齐方式 -->
+  <div>
+    atguigux <span>x前端</span>
+  </div>
+  <hr>
+  <table border="1" cellspacing="0">
+    <caption>人员信息</caption>
+    <thead>
+      <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>性别</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr height="200">
+        <td class="san">张三</td>
+        <td>18</td>
+        <td>男</td>
+      </tr>
+      <tr>
+        <td>李四</td>
+        <td>20</td>
+        <td>女</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
