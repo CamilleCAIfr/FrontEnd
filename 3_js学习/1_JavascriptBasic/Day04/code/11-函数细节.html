@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 两个相同的函数后面的会覆盖前面的函数
+   在js中实参的个数和形参的个数可以不一致
+      如果形参过多 会自动填上undefined
+      如果实参过多,多余的实参会被忽略
+      函数一旦碰到return就不会再往下执行了,函数的结束用return -->
+  <script>
+    // function getSum(x, y) {
+    //   return x + y
+    //   // 返回值返回给了谁？  函数的调用者 getSum(1,2)
+    //   // getSum(1,2) = 3
+    // }
+    // // let result = getSum(1, 2) = 3
+    // // let num = parseInt('12px')
+    // let result = getSum(1, 2)
+    // console.log(result)
+
+    // 函数名相同，后面覆盖前面
+    // function fn() {
+    //   console.log(1)
+    // }
+    // function fn() {
+    //   console.log(2)
+    // }
+    // fn()
+    // 参数不匹配
+    function fn(a, b) {
+      console.log(a + b)
+    }
+    // fn(1, 2, 3)
+    fn(1)
+  </script>
+</body>
+
+</html>
