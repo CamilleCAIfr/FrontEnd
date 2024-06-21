@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    console.log(Boolean('pink'))
+    console.log(Boolean(''))
+    console.log(Boolean(0))
+    console.log(Boolean(-1))
+    console.log(Boolean(undefined))
+    console.log(Boolean(null))
+    console.log(Boolean(NaN))
+    console.log(Boolean(false))
+
+    if (null) {
+      console.log(11)
+    }
+
+    console.log(undefined && 20)
+    console.log(0 && 20)
+
+    console.log(0 || 20)  //20
+    console.log(10 || 20)  //10
+    // 隐式转换
+    console.log('----------')
+    console.log('' - 2)
+    console.log(null + 2)
+    console.log(undefined + 2)
+    console.log(null == undefined)
+    console.log(null === undefined) //数据类型不一样，但都当0看
+    console.log(undefined - 2)  // undefined做任何操作都是 NaN
+
+
+
+  </script>
+</body>
+
+</html>

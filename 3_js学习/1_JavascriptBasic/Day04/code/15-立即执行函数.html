@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 
+  立即执行函数必须加分号
+   立即执行函数为了防止变量污染 
+      -->
+  <script>
+
+    // let num = 10
+    // let num = 20
+    // 1. 第一种写法
+    (function () {
+      let num = 10
+    })();
+
+    (function () {
+      let num = 20
+    })();
+
+    (function (x, y) {
+      console.log(x + y);
+    })(1, 2);
+
+    (function () { })()
+
+      // 2. 第二种写法
+      (function () { }())
+  </script>
+</body>
+
+</html>

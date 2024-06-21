@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function fn(x, y) {
+      x = x || 0
+      y = y || 0
+      console.log(x + y)
+    }
+    // fn(1, 2)
+    // fn()
+    let age = 18
+    // console.log(false && age++)  //一假则假，后面的就不再执行了
+    // console.log(age)
+
+    console.log(true || age++) //一真则真，后面的也不再执行了
+    console.log(age)
+
+    console.log(11 && 22)  //如果都是真，则返回最后一个真值
+    console.log(11 || 22) //逻辑或输出第一个真值
+
+
+    // 逻辑与 有一个假的后面不再执行  都是真以最后一个真为准
+    // 逻辑或 有一个真的后面不再执行  都是假以最后一个假为准
+
+    // && 左边为假的就短路
+    // || 左边为真的就短路
+
+  </script>
+</body>
+
+</html>
