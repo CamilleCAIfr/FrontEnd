@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let pink = {
+      uname: 'pink',
+      age: 18,
+      gender: 'female'
+    }
+
+    // console.log(pink)
+    // console.log(typeof pink)
+    // 1. 声明
+    let goods = {
+      'goods-name': '小米小米10 青春版',
+      num: '100012816024',
+      weight: '0.55kg',
+      address: '中国大陆'
+    }
+    console.log(goods)
+    // 查  对象名.属性名
+    // console.log(goods.uname)
+    // 改  把性别的女改为男 对象名.属性名=新值
+    pink.gender = 'male'
+    console.log(pink)
+    // 增   对象名.新属性名=新值  改和增语法一样，判断就是看有没有这个属性，有就是改，没有就是增
+    pink.hobby = '足球'
+    console.log(pink)
+    // 删   delete对象名.属性名  了解 很少用删除操作
+    delete pink.age
+    console.log(pink)
+
+    // goods.uname = '小米10 PLUS'
+    goods.color = 'pink'
+    // console.log(goods.uname)
+    console.log(goods.num)
+    console.log(goods.weight)
+    console.log(goods.color)
+    console.log(goods.address)
+    // 查的另外一种属性
+    console.log(goods['goods-name'])
+
+    // 查 有两种方法
+    // 1. 对象名.属性名
+    // 2. 对象名['属性名']
+    console.log(goods.num)
+    console.log(goods['num'])
+
+    console.log(goods['goods-name'])
+    console.log(goods['num'])
+    console.log(goods['weight'])
+    console.log(goods['color'])
+    console.log(goods['address'])
+  </script>
+</body>
+
+</html>
